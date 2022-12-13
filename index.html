@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  margin: auto;
+}
+</style>
+</head>
+<body>
+
+<article>
+<h1> Celebrity Simulator </h1>
+<p> Celebrity Simulator is a small game I made for CSCE 450. It involves the user being a celebrity walking down the red carpet, attempting to strike poses for paparazzi. Below is a video explaining the project and demonstrating the gameplay. </p>
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/xL39RAsAu2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p> Elaborating on some brushed-over things: 
+  <ul>
+    <li> The values of the goal expressions are generated sequentially between runs with a call to rand() </li>
+	<li> As I mentioned, there were 6 blendshapes making up the goal expressions for the celebrity. List of the 6 shapes below, with images: 
+	  <ul>
+	    <li><img src="Victor_brows_down.png" alt="Victor Brows Down"> - Victor with brows down</li>
+		<li><img src="Victor_brows_raise.png" alt="Victor Brows Raised"> - Victor with brows raised</li>
+		<li><img src="Victor_jaw_clench.png" alt="Victor Jaw Clenched"> - Victor with jaw clenched</li>
+		<li><img src="Victor_lips_close.png" alt="Victor Lips Closed"> - Victor with lips closed</li>
+		<li><img src="Victor_nostril_dialtor.png" alt="Victor Nostril dialtor"> - Victor with nose dialated</li>
+		<li><img src="Victor_sneer.png" alt="Victor Sneering"> - Victor Sneering</li>
+	  </ul>
+	</li>
+	<li> The way the game determines if the user was "correct", is by calculating the average difference between the 3 slider "goal" positions, and the 3 slider "current" positions. If the difference is below a certain threshold, it gives the user the win </li>
+  </ul>
+</p>
+</article>
+
+</body>
+</html>
